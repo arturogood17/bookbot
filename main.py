@@ -2,6 +2,8 @@ def main():
     text = get_book()
     num_words= counts(text)
     letters = num_letter(text)
+
+
     print(f"--- Begin report of books/frankenstein.txt ---")
     print(f"{num_words} words found in the document")
     print("")
@@ -44,5 +46,23 @@ def new_l(letters):
     for item in l_sort:
         for key in item:
             print (f"The {item} character was found {item[key]} times")
+
+#They did it like this:
+
+    #  for item in chars_sorted_list:
+    #     if not item["char"].isalpha():
+    #         continue
+    #     print(f"The '{item['char']}' character was found {item['num']} times")        
+            
+# def sort_on(d):
+#     return d["num"]
+
+
+# def chars_dict_to_sorted_list(num_chars_dict):
+#     sorted_list = []
+#     for ch in num_chars_dict:
+#         sorted_list.append({"char": ch, "num": num_chars_dict[ch]})
+#     sorted_list.sort(reverse=True, key=sort_on)
+#     return sorted_list
 
 main()
