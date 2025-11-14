@@ -1,5 +1,5 @@
 import os
-from functions import *
+from stats import *
 
 def main():
     abs_path = os.path.dirname(__file__)
@@ -7,7 +7,8 @@ def main():
     book_path = os.path.join(abs_path, relative_path) 
     book = get_book_text(book_path)
 
-    print(book)
+    words = count_words(book)
+    print(f"Found {words} total words")
 
 
 if __name__ == "__main__":
