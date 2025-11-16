@@ -15,3 +15,6 @@ def count_char(book):
         else:
             chars[l] = 1
     return chars
+
+def sort_on(book):
+    return book["num"]
